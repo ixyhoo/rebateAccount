@@ -22,6 +22,7 @@ form.addEventListener('submit', function(e) {
   }
 
   let totalSeconds = choice.value * 60;
+  choice.value = ''; // réinitialiser le champ de saisie
 
   countdown = setInterval(() => { // assigner le nouveau compte à rebours à countdown
     if (totalSeconds < 0) {
